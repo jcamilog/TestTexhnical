@@ -1,0 +1,6 @@
+<div class="content">
+    <mat-card>
+        <app-form *ngIf="!generatePdf" (formSend)="receivedForm($event)"></app-form>
+        <app-generate-pdf *ngIf="generatePdf" [form]="form" ></app-generate-pdf>
+    </mat-card>
+</div>

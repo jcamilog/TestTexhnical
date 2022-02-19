@@ -1,0 +1,24 @@
+<form [formGroup]="form" (ngSubmit)="sendForm()">
+    <mat-form-field>
+        <mat-label>Nombre</mat-label>
+        <input type="text" matInput placeholder="Nombre" formControlName="name">
+        <mat-error >
+          Este campo es <strong>requerido</strong>
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Nit</mat-label>
+        <input type="text" matInput placeholder="0000000-0" formControlName="nit">
+        <mat-error >
+          Este campo es <strong>requerido</strong>
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Banco</mat-label>
+        <input type="text" matInput placeholder="Nombre banco" formControlName="bank">
+        <mat-error >
+          Este campo es <strong>requerido</strong>
+        </mat-error>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">  Enviar </button>
+</form>
